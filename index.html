@@ -18,14 +18,16 @@
 <header class="site-header" id="top">
   <div class="wrap header-inner">
     <a href="#top" class="logo">
-      <span class="logo-mark">GCYN</span>
-      <span class="logo-sub">DIGITAL</span>
+      <!-- Replace with your own logo file: put it in /images and update the src below.
+           A light/white version works best since the header background is dark navy. -->
+      <img src="images/logo.png" alt="GCYN Digital logo" class="logo-img" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-fallback',textContent:'GCYN DIGITAL'}))">
     </a>
 
     <nav class="main-nav" id="mainNav">
       <a href="#top">Home</a>
-      <a href="#what-i-build">How It Works</a>
-      <a href="#recent-works">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricing">Pricing</a>
       <div class="nav-social">
         <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit GCYN Digital on Facebook">FB</a>
         <a href="http://wa.me/639985344311" target="_blank" rel="noopener" aria-label="Message GCYN Digital on WhatsApp">WA</a>
@@ -47,39 +49,49 @@
       <div class="hero-copy">
         <p class="eyebrow">Local Web Solutions</p>
         <h1>Websites that drive <em>business results.</em></h1>
-        <p class="hero-lede">I build clean, professional landing pages for local businesses. No complex setups. Just a fast site that tells customers who you are and how to reach you. You approve it, I launch it, and I handle hosting and domain so you never have to.</p>
+        <p class="hero-lede">I build clean, affordable landing pages for local businesses across the Philippines. No complex setups, no monthly fees — just a fast site that tells customers who you are and how to reach you. A small deposit gets your project started, and the balance is due when your site launches.</p>
         <div class="hero-actions">
           <a href="#contact-me" class="btn btn-amber">Start With A Free Consult</a>
-          <a href="#recent-works" class="btn btn-ghost">See The Work</a>
+          <a href="#portfolio" class="btn btn-ghost">See The Work</a>
         </div>
-        <p class="built-for">Built for: Local Restaurants &nbsp;•&nbsp; Contractors &nbsp;•&nbsp; Service Providers</p>
+        <p class="built-for">Built for: Local Restaurants &nbsp;•&nbsp; Contractors &nbsp;•&nbsp; Service Providers Across The Philippines</p>
       </div>
 
-      <div class="hero-ticket" aria-hidden="true">
-        <div class="ticket">
-          <div class="ticket-stamp">Approved</div>
-          <div class="ticket-row ticket-head">
-            <span>Work Order</span>
-            <span>No. 0001</span>
+      <div class="hero-preview" aria-hidden="true">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-url">yourbusiness.com</span>
           </div>
-          <div class="ticket-line"><span>Client</span><span>Your Business</span></div>
-          <div class="ticket-line"><span>Build</span><span>Landing Page</span></div>
-          <div class="ticket-line"><span>Hosting</span><span>Managed</span></div>
-          <div class="ticket-line"><span>Domain</span><span>Included</span></div>
-          <div class="ticket-perf"></div>
-          <div class="ticket-row ticket-total">
-            <span>Status</span>
-            <span>Ready To Launch</span>
+          <div class="browser-body">
+            <div class="mini-nav">
+              <span class="mini-logo"></span>
+              <span class="mini-link"></span>
+              <span class="mini-link"></span>
+              <span class="mini-link mini-link-cta"></span>
+            </div>
+            <div class="mini-hero">
+              <span class="mini-eyebrow"></span>
+              <span class="mini-headline"></span>
+              <span class="mini-headline mini-headline-short"></span>
+              <span class="mini-cta"></span>
+            </div>
           </div>
+        </div>
+        <div class="approval-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          Demo ready for your review
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== WHAT I BUILD ===== -->
-  <section class="section section-paper" id="what-i-build">
+  <!-- ===== SERVICES (what I build + how it works, merged) ===== -->
+  <section class="section section-paper" id="services">
     <div class="wrap">
-      <p class="eyebrow eyebrow-dark">What I Build</p>
+      <p class="eyebrow eyebrow-dark">Services</p>
       <h2 class="section-title">Built for local businesses.<br>Built for you.</h2>
 
       <div class="build-grid">
@@ -101,11 +113,34 @@
           <p>Basic on-page SEO, performance tuning, and mobile-responsive design so your business gets found on search engines and looks great on any device.</p>
         </article>
       </div>
+
+      <div class="process-block" id="how-it-works">
+        <p class="eyebrow eyebrow-dark">How It Works</p>
+        <h3 class="process-title">Simple process. Transparent pricing.</h3>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <h4>Start With A Small Deposit</h4>
+            <p>A small upfront fee gets your project started. I build a complete demo site based on your business. You review it, request changes, and approve it.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <h4>Review &amp; Approve</h4>
+            <p>I build a complete demo based on your business and your brief. You review it, request reasonable revisions, and once it looks right, you approve it for launch.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <h4>Balance &amp; Launch</h4>
+            <p>Pay the remaining balance and your site goes live. No monthly retainer, no ongoing fees — the finished site is yours to keep.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== RECENT WORKS ===== -->
-  <section class="section section-navy" id="recent-works">
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section section-navy" id="portfolio">
     <div class="wrap">
       <p class="eyebrow">Recent Works</p>
       <h2 class="section-title section-title-light">Real sites. Real results.</h2>
@@ -113,7 +148,9 @@
       <div class="works-grid">
 
         <article class="work-card">
-          <div class="work-thumb work-thumb-water" aria-hidden="true"></div>
+          <div class="work-thumb work-thumb-water">
+            <img src="images/talisay-aqua-pure.jpg" alt="Talisay Aqua Pure landing page preview" loading="lazy" onerror="this.style.display='none'">
+          </div>
           <div class="work-body">
             <span class="work-tag">Water Refilling Service — Demo</span>
             <h3>Talisay Aqua Pure</h3>
@@ -122,7 +159,9 @@
         </article>
 
         <article class="work-card">
-          <div class="work-thumb work-thumb-massage" aria-hidden="true"></div>
+          <div class="work-thumb work-thumb-massage">
+            <img src="images/hands-home-massage.jpg" alt="Hands Home Massage landing page preview" loading="lazy" onerror="this.style.display='none'">
+          </div>
           <div class="work-body">
             <span class="work-tag">Massage Service — Demo</span>
             <h3>Hands Home Massage</h3>
@@ -131,7 +170,9 @@
         </article>
 
         <article class="work-card">
-          <div class="work-thumb work-thumb-food" aria-hidden="true"></div>
+          <div class="work-thumb work-thumb-food">
+            <img src="images/mobile-eatery.jpg" alt="Mobile Eatery landing page preview" loading="lazy" onerror="this.style.display='none'">
+          </div>
           <div class="work-body">
             <span class="work-tag">Food &amp; Restaurants — Demo</span>
             <h3>Mobile Eatery</h3>
@@ -140,7 +181,9 @@
         </article>
 
         <article class="work-card">
-          <div class="work-thumb work-thumb-plumbing" aria-hidden="true"></div>
+          <div class="work-thumb work-thumb-plumbing">
+            <img src="images/davao-plumbing-pro.jpg" alt="Davao Plumbing Pro landing page preview" loading="lazy" onerror="this.style.display='none'">
+          </div>
           <div class="work-body">
             <span class="work-tag">Service Provider — Demo</span>
             <h3>Davao Plumbing Pro</h3>
@@ -152,27 +195,53 @@
     </div>
   </section>
 
-  <!-- ===== HOW IT WORKS ===== -->
-  <section class="section section-paper" id="how-it-works">
+  <!-- ===== PRICING ===== -->
+  <section class="section section-paper" id="pricing">
     <div class="wrap">
-      <p class="eyebrow eyebrow-dark">How It Works</p>
-      <h2 class="section-title">Simple process.<br>Transparent pricing.</h2>
+      <p class="eyebrow eyebrow-dark">Pricing</p>
+      <h2 class="section-title">One landing page.<br>One clear price.</h2>
+      <p class="pricing-intro">No monthly fees, no hidden charges. Pay a small deposit to start, and the balance when your site is ready to launch.</p>
 
-      <div class="steps">
-        <div class="step">
-          <span class="step-num">01</span>
-          <h3>Start With A Small Deposit</h3>
-          <p>A small upfront fee gets your project started. I build a complete demo site based on your business. You review it, request changes, and approve it. Final payment is due upon launch.</p>
+      <div class="pricing-layout">
+        <div class="pricing-card">
+          <div class="pricing-card-head">
+            <span class="pricing-plan-name">Landing Page Package</span>
+            <div class="pricing-amount">
+              <span class="price-currency">₱</span><span class="price-value">[X,XXX]</span>
+              <span class="price-note">one-time</span>
+            </div>
+          </div>
+
+          <ul class="pricing-features">
+            <li>Custom one-page design for your business</li>
+            <li>Mobile-friendly, fast-loading build</li>
+            <li>Contact form so visitors can reach you</li>
+            <li>Basic on-page SEO setup</li>
+            <li>[X] rounds of revisions before launch</li>
+          </ul>
+
+          <div class="pricing-split">
+            <div class="pricing-split-item">
+              <span>Deposit to start</span>
+              <strong>₱[X,XXX]</strong>
+            </div>
+            <div class="pricing-split-item">
+              <span>Balance at launch</span>
+              <strong>₱[X,XXX]</strong>
+            </div>
+          </div>
+
+          <a href="#contact-me" class="btn btn-amber pricing-cta">Start With A Free Consult</a>
         </div>
-        <div class="step">
-          <span class="step-num">02</span>
-          <h3>Hosting &amp; Domain Managed</h3>
-          <p>I handle your domain, hosting, and email setup, and monitor your site regularly so it stays fast, secure, and worry-free. You focus on what you do best — running your business.</p>
-        </div>
-        <div class="step">
-          <span class="step-num">03</span>
-          <h3>Ongoing Care &amp; Updates</h3>
-          <p>For a small monthly retainer, I handle the technical stuff so you do not have to. Minor updates are included; new sections, layout changes, or extra pages are quoted separately.</p>
+
+        <div class="pricing-addons">
+          <p class="addons-label">Optional Add-Ons</p>
+          <ul class="addons-list">
+            <li><span>Extra page</span><span>+₱[X,XXX]</span></li>
+            <li><span>Copywriting help</span><span>+₱[X,XXX]</span></li>
+            <li><span>Logo design</span><span>+₱[X,XXX]</span></li>
+          </ul>
+          <p class="addons-note">Add-ons are quoted alongside your project brief during the free consult.</p>
         </div>
       </div>
     </div>
@@ -218,14 +287,8 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <span class="logo-mark">GCYN</span>
-      <span class="logo-sub">DIGITAL</span>
-      <p>GCYN Digital is a digital presence by Gacayan.</p>
-    </div>
-
-    <div class="footer-links">
-      <a href="terms-and-conditions.html">Terms and Conditions</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
+      <img src="images/logo.png" alt="GCYN Digital logo" class="logo-img logo-img-footer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-fallback',textContent:'GCYN DIGITAL'}))">
+      <p>Affordable landing pages for local businesses in the Philippines.</p>
     </div>
 
     <div class="footer-social">

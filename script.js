@@ -35,8 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const statusEl = document.getElementById('formStatus');
 
   // ⚠️ GitHub Pages is static and cannot send email on its own.
-  // Sign up for a free form backend (e.g. https://formspree.io) and
-  // paste your endpoint below to make this form actually deliver messages.
+  // Sign up free at https://formspree.io, create a form, and paste your
+  // endpoint below — Formspree is built to receive submissions from a
+  // hand-coded HTML form like this one (unlike Tally, which only accepts
+  // submissions from forms built inside its own builder).
   const FORM_ENDPOINT = ''; // e.g. 'https://formspree.io/f/xxxxxxx'
 
   if (form) {
@@ -93,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const brief = fields.brief.input.value.trim();
         const subject = encodeURIComponent(`New project brief from ${name}`);
         const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${brief}`);
-        window.location.href = `mailto:hello@gacayan.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:hello@yourdomain.com?subject=${subject}&body=${body}`;
 
         statusEl.textContent = 'Opening your email app to send this — thanks!';
         statusEl.className = 'form-status success';
@@ -116,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
           throw new Error('Form submission failed');
         }
       } catch (err) {
-        statusEl.textContent = 'Something went wrong. Please email hello@gacayan.com directly.';
+        statusEl.textContent = 'Something went wrong. Please email hello@yourdomain.com directly.';
         statusEl.className = 'form-status error';
       } finally {
         submitBtn.disabled = false;
