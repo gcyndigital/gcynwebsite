@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // endpoint below — Formspree is built to receive submissions from a
   // hand-coded HTML form like this one (unlike Tally, which only accepts
   // submissions from forms built inside its own builder).
-  const FORM_ENDPOINT = ''; // e.g. 'https://formspree.io/f/xxxxxxx'
+  const FORM_ENDPOINT = 'https://formspree.io/f/xrpzazgp'; // e.g. 'https://formspree.io/f/xxxxxxx'
 
   if (form) {
     const fields = {
