@@ -126,12 +126,12 @@ button{ font-family: inherit; cursor: pointer; }
   color: var(--white);
 }
 .logo-img{
-  height: 34px;
+  height: 38px;
   width: auto;
   display: block;
 }
 .logo-img-footer{
-  height: 40px;
+  height: 44px;
   margin-bottom: 14px;
 }
 .logo-fallback{
@@ -154,18 +154,26 @@ button{ font-family: inherit; cursor: pointer; }
 .main-nav > a:hover{ opacity: 1; }
 .nav-social{
   display: flex;
-  gap: 14px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
+  gap: 10px;
 }
-.nav-social a{
-  color: var(--slate-light);
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 6px 9px;
-  border-radius: var(--radius);
+.social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: transform 0.15s ease, filter 0.15s ease;
 }
-.nav-social a:hover{ color: var(--amber); border-color: var(--amber); }
+.social-icon svg{
+  width: 16px;
+  height: 16px;
+  fill: var(--white);
+}
+.social-icon:hover{ transform: translateY(-2px); filter: brightness(1.1); }
+.social-fb{ background: #1877F2; }
+.social-wa{ background: #25D366; }
 .nav-cta{ padding: 10px 20px; }
 
 .nav-toggle{
@@ -259,7 +267,7 @@ button{ font-family: inherit; cursor: pointer; }
   transform: rotate(1.2deg);
 }
 .preview-logo-badge img{
-  height: 16px;
+  height: 20px;
   width: auto;
   display: block;
 }
@@ -690,13 +698,18 @@ button{ font-family: inherit; cursor: pointer; }
   max-width: 30ch;
   color: var(--slate-light);
 }
-.footer-links, .footer-social{
+.footer-links{
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 14px;
 }
-.footer-links a:hover, .footer-social a:hover{ color: var(--amber); }
+.footer-links a:hover{ color: var(--amber); }
+.footer-social{
+  display: flex;
+  gap: 12px;
+  align-self: flex-start;
+}
 .footer-bottom{
   padding-block: 20px;
   font-family: var(--font-mono);
