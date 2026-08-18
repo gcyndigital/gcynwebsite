@@ -254,8 +254,8 @@ button{ font-family: inherit; cursor: pointer; }
 }
 .preview-logo-badge{
   position: absolute;
-  top: -65px;
-  left: 15px;
+  top: -60px;
+  left: 5px;
   z-index: 2;
   display: flex;
   align-items: center;
