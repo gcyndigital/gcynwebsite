@@ -254,7 +254,7 @@ button{ font-family: inherit; cursor: pointer; }
 }
 .preview-logo-badge{
   position: absolute;
-  top: -34px;
+  top: -100px;
   left: 62px;
   z-index: 2;
   display: flex;
@@ -267,7 +267,7 @@ button{ font-family: inherit; cursor: pointer; }
   transform: rotate(1.2deg);
 }
 .preview-logo-badge img{
-  height: 40px;
+  height: 80px;
   width: auto;
   display: block;
 }
