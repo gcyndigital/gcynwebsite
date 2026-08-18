@@ -267,7 +267,7 @@ button{ font-family: inherit; cursor: pointer; }
   transform: rotate(1.2deg);
 }
 .preview-logo-badge img{
-  height: 20px;
+  height: 40px;
   width: auto;
   display: block;
 }
