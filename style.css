@@ -131,7 +131,8 @@ button{ font-family: inherit; cursor: pointer; }
   display: block;
 }
 .logo-img-footer{
-  height: 44px;
+  height: 56px;
+  width: auto;
   margin-bottom: 14px;
 }
 .logo-fallback{
@@ -207,9 +208,9 @@ button{ font-family: inherit; cursor: pointer; }
 }
 .hero-grid{
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 56px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin-inline: auto;
 }
 .hero-copy h1{
   font-size: clamp(34px, 5vw, 56px);
@@ -237,6 +238,7 @@ button{ font-family: inherit; cursor: pointer; }
   letter-spacing: 0.06em;
   color: var(--slate-light);
   text-transform: uppercase;
+  text-wrap: pretty;
 }
 
 /* --- signature element: the demo browser preview --- */
@@ -720,10 +722,6 @@ button{ font-family: inherit; cursor: pointer; }
    RESPONSIVE
    ========================================================= */
 @media (max-width: 900px){
-  .hero-grid{ grid-template-columns: 1fr; }
-  .hero-preview{ order: -1; margin-bottom: 12px; }
-  .browser-frame{ max-width: 320px; }
-  .browser-stage{ max-width: 320px; }
   .build-grid{ grid-template-columns: 1fr; }
   .works-grid{ grid-template-columns: 1fr; }
   .steps{ grid-template-columns: 1fr; gap: 32px; }
