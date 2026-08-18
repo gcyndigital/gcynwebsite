@@ -254,19 +254,19 @@ button{ font-family: inherit; cursor: pointer; }
 }
 .preview-logo-badge{
   position: absolute;
-  top: -40px;
+  top: -45px;
   left: 5px;
   z-index: 2;
   display: flex;
   align-items: center;
-  background: var(--ink);
+  background: var(--ink-soft);
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 8px;
   padding: 7px 11px;
   box-shadow: 0 12px 24px -10px rgba(0,0,0,0.5);
 }
 .preview-logo-badge img{
-  height: 40px;
+  height: 45px;
   width: auto;
   display: block;
 }
